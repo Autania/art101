@@ -12,12 +12,12 @@ p{
 }
 
 #content{
-    background-color: azure;
+    background-color: rgb(130, 191, 191);
     width: 500px;
     min-height: 300px;
     padding: 10px;
     margin: 10px;
-    border: solid 1px #8aad75;
+    border: solid 4px #8aad75;
     font-size: 20px;
 }
 body {
