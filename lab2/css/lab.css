@@ -2,15 +2,15 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 10px;
-    border: solid 1px #ae99b0;
-    background-color: #A2CEC4;
+    border: solid 15px #dfb3e3;
+    background-color: #94edd8;
   } h1 {
     font-family:American Typewriter;
   }
 h1{
-  color: rgb(55, 55, 120);
+  color: rgb(87, 87, 180);
   font-size: 200%;
 }
 p {
