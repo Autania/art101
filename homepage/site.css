@@ -19,6 +19,8 @@ h1 {
   font-size: 200%;
 }
 
+.autania photo {margin: 10px;
+max-width: 350px;}
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
   margin: 10px;
@@ -26,9 +28,7 @@ h1 {
   border: solid 1px #877afd;
   background-color: #84B59F;
 }
-img {
-  width: 200px;
-}
+
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
