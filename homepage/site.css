@@ -25,14 +25,19 @@ max-width: 350px;}
 #content {
   margin: 10px;
   padding: 10px;
-  border: solid 1px #877afd;
+  border: solid 11px #877afd;
   background-color: #84B59F;
+}
+
+a {
+  display: block;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
-  border: solid 1px #c9a4eb;
+  border: solid 15px #c9a4eb;
+  p.inset {border-style: inset;}
   background-color: #A3C9A8;
 }
