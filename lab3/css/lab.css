@@ -7,4 +7,12 @@
     border: solid 15px #f28f8f;
     background-color: #e5cf78;
   }
-  
+
+  .art101files photo {margin: 10px;
+    max-width: 350px;}
+
+    .myhomepage photo {margin: 10px;
+      max-width: 350px;}
+
+      .mylocalfiles photo {margin: 10px;
+        max-width: 350px;}
