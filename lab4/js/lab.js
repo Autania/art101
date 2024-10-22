@@ -1,6 +1,6 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Autania Mierow
+// Date: October 16th 2024
 
 // Constants
 
@@ -19,3 +19,4 @@ function main() {
 
 // let's get this party started
 main();
+
