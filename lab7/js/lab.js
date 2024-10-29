@@ -35,6 +35,9 @@ function sortUserName() {
         return nameSorted;
     }
 }
+function displaySortedName() {
+    let result = sortUserName(); 
+    document.getElementById("output").innerHTML = `<p>I fixed your name: <strong>${result}</strong></p>`;
+}
 
-// output
-document.writeln("I fixed your name: ", sortUserName(), "<br>");
+window.onload = displaySortedName; 
