@@ -1,6 +1,8 @@
 // Author: Autania Mierow
 // Date: 4 November 2024
 
+console.log("JS is loaded"); 
+
 // add button to challenge section
 
 $("#challenge").append("<button id='button-challenge'>Make Special</button>");
