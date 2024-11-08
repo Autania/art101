@@ -2,20 +2,34 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 body {
-    background-color: #f1e0a5;
+    background-color: #aac7ea;
   } 
   h1,h2,h3 {
     font-family: Arial, Helvetica, sans-serif;
   }
-  .text p {
-    display: inline-block;
-    max-width: 60%;
-    margin: 6px;
-    padding: 5px 10px;
+  .text {
+    max-width: 70%;
+    padding: 10px;
+    margin: 5px 0;
     border-radius: 15px;
-    background-color: rgb(203, 97, 97);
     color: white;
-    font-family: sans-serif;
-    font-size: 4em;
-  } 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 1.4;
+  }
   
+  #output .text:nth-child(odd) {
+    background-color: #007aff;
+    text-align: left;
+    color: white;
+  border-radius: 15px 15px 15px 0px;
+  align-self: flex-start;
+}
+#output .text:nth-child(even) {
+  background-color: #e5e5ea; 
+  text-align: right;
+  color: black;
+  border-radius: 15px 15px 0px 15px;
+  align-self: flex-end;
+}
