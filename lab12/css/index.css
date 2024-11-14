@@ -3,7 +3,7 @@
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 /* Parchment-style background */
 body {
-  background-image: url('/img/parchment.jpeg'), url('/img/castlehogwarts.png');
+  background-image: url('img/parchment.jpeg'), url('img/castlehogwarts.png');
   background-size: cover, contain;
   background-position: top, bottom center;
   background-repeat: no-repeat, no-repeat;
