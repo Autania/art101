@@ -11,54 +11,57 @@
     <script src="js/lab.js" DEFER></script>
   
 
-</head>
-<body>
-    <header>
-        <h1>Virtual Zen Garden</h1>
-        <p>Find your calm, one moment at a time.</p>
-    </header>
 
-    <main>
-        <!-- Sand Raking Area -->
-        <section id="sand-garden">
-            <canvas id="sandCanvas"></canvas>
-            <div id="rake-tools">
-                <button data-tool="small">Small Rake</button>
-                <button data-tool="large">Large Rake</button>
-                <button data-tool="erase">Erase Patterns</button>
-            </div>
-        </section>
-
-        <!-- Daily Affirmation -->
-        <section id="daily-affirmation">
-            <h2>Today's Affirmation</h2>
-            <p id="affirmation-text">"You are exactly where you need to be."</p>
-        </section>
-
-        <!-- Toolbox -->
-        <section id="toolbox">
-            <h2>Toolbox</h2>
-            <div class="tool" id="breathing-tool">
-                <h3>Breathing Bubble</h3>
-                <div class="bubble"></div>
-                <p>Breathe in... Breathe out...</p>
-            </div>
-            <div class="tool" id="sound-tool">
-                <h3>Sound Therapy</h3>
-                <button data-sound="rain">Rain</button>
-                <button data-sound="waves">Ocean Waves</button>
-                <button data-sound="birds">Birds Chirping</button>
-            </div>
-            <div class="tool" id="journal-tool">
-                <h3>Reflection Space</h3>
-                <textarea placeholder="Write your thoughts here..."></textarea>
-                <button id="release-thoughts">Release</button>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Virtual Zen Garden. Find your calm, always.</p>
-    </footer>
-</body>
-</html>
+    </head>
+    <body>
+        <header>
+            <h1>Virtual Zen Garden</h1>
+            <p>Find your calm, one moment at a time.</p>
+        </header>
+    
+        <main>
+            <!-- Sand Raking Area -->
+            <section id="sand-garden">
+                <h2>Rake the Sand</h2>
+                <canvas id="sandCanvas"></canvas>
+                <div id="rake-tools">
+                    <button class="rake-btn" data-tool="small">Small Rake</button>
+                    <button class="rake-btn" data-tool="large">Large Rake</button>
+                    <button class="rake-btn" data-tool="erase">Erase Patterns</button>
+                </div>
+            </section>
+    
+            <!-- Daily Affirmation -->
+            <section id="daily-affirmation">
+                <h2>Today's Affirmation</h2>
+                <p id="affirmation-text">"You are exactly where you need to be."</p>
+            </section>
+    
+            <!-- Toolbox -->
+            <section id="toolbox">
+                <h2>Toolbox</h2>
+                <div class="tool" id="breathing-tool">
+                    <h3>Breathing Bubble</h3>
+                    <div class="bubble"></div>
+                    <p>Breathe in... Breathe out...</p>
+                </div>
+                <div class="tool" id="sound-tool">
+                    <h3>Sound Therapy</h3>
+                    <button data-sound="rain">Rain</button>
+                    <button data-sound="waves">Ocean Waves</button>
+                    <button data-sound="birds">Birds Chirping</button>
+                </div>
+                <div class="tool" id="journal-tool">
+                    <h3>Reflection Space</h3>
+                    <textarea placeholder="Write your thoughts here..."></textarea>
+                    <button id="release-thoughts">Release</button>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Virtual Zen Garden. Find your calm, always.</p>
+        </footer>
+    </body>
+    </html>
+    
