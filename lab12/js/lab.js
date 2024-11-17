@@ -7,13 +7,13 @@ function sortingHat(str) {
   let mod = len % 4;
 
   if (mod === 0) {
-    return "Gryfindor";
+    return "Gryfindor :) ";
 
   } else if (mod === 1) {
-    return "Slytherin";
+    return "Slytherin!!!";
 
   } else if (mod === 2) {
-    return "Hufflepuff";
+    return "Hufflepuff...";
 
   } else if (mod === 3) {
     return "Ravenclaw :(";

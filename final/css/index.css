@@ -1,0 +1,62 @@
+/* General Reset */
+body, h1, h2, p, button, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #f7ede2, #d6ccc2);
+  color: #3e3d3d;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  margin-bottom: 20px;
+}
+
+/* Sand Garden */
+#sand-garden {
+  margin: 20px auto;
+  width: 80%;
+  height: 400px;
+  border: 2px solid #8c7a6b;
+  background: #f4e3d2;
+  position: relative;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* Affirmations */
+#daily-affirmation {
+  margin: 20px auto;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #8c7a6b;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Toolbox */
+#toolbox {
+  margin: 20px auto;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #8c7a6b;
+}
+
+.tool {
+  margin: 10px 0;
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  padding: 10px;
+}
