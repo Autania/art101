@@ -8,13 +8,12 @@ body, h1, h2, p, button, textarea {
 
 /* Body Style */
 body {
+  background: linear-gradient(to bottom, #d2edf4, #e5c8aa, #dfeedf);
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #f7ede2, #d6ccc2);
   color: #3e3d3d;
   text-align: center;
-  padding: 20px;
-  line-height: 1.6;
 }
+
 
 /* Header */
 header {
@@ -41,6 +40,10 @@ p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   padding: 10px;
+}
+canvas {
+ background: no-repeat url("/final/img/sand.jpg");
+  background-size: cover;
 }
 
 canvas {
@@ -85,6 +88,24 @@ canvas {
   background: white;
   border: 1px solid #8c7a6b;
   border-radius: 8px;
+}
+
+#breathing-bubble {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #7b9df4, #a2cea0);
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: breathe 6s infinite ease-in-out; /* Adjust speed here */
+}
+
+@keyframes breathe {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.5); /* Adjust the scale for size */
+  }
 }
 
 .tool {
