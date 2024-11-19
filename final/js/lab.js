@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Change affirmations daily
   affirmationText.textContent = affirmations[Math.floor(Math.random() * affirmations.length)];
 
-  // Sand Raking Logic
-  const canvas = document.getElementById('sandCanvas');
+}); // <--- Missing this
+
+// Sand Raking Logic
+const canvas = document.getElementById('sandCanvas');
 const ctx = canvas.getContext('2d');
 let isDrawing = false;
 
@@ -23,6 +25,7 @@ let isDrawing = false;
 let rakeSize = 5; // Default small rake size
 ctx.lineWidth = rakeSize;
 ctx.lineCap = 'round'; // Makes grooves smooth
+
 
 canvas.addEventListener('mousedown', (e) => {
     isDrawing = true;
@@ -41,25 +44,16 @@ canvas.addEventListener('mousemove', (e) => {
 canvas.addEventListener('mouseup', () => (isDrawing = false));
 
 // Button Event Listeners to Change Rake Size
+
 document.querySelectorAll('.rake-btn').forEach((button) => {
     button.addEventListener('click', (e) => {
-        const tool = e.target.dataset.tool;
-        if (tool === 'small') rakeSize = 5;
-        if (tool === 'large') rakeSize = 15;
-        if (tool === 'erase') {
-            ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
-        }
-        ctx.lineWidth = rakeSize;
-    });
-});
-
-
-  // Toolbox: Breathing Bubble animation (simplified)
-  const bubble = document.querySelector(".bubble");
-  let bubbleSize = 50;
-  setInterval(() => {
-      bubble.style.width = `${bubbleSize}px`;
-      bubble.style.height = `${bubbleSize}px`;
-      bubbleSize = bubbleSize === 50 ? 80 : 50;
-  }, 1500);
-});
+        const tool= e.target.dataset.tool;
+        if(tool === 'small') rakeSize=5;if(tool === 'large') rakeSize=15;if(tool=== 'erase'){ctx.clearRect(0,0,canvas.width,canvas.height);}// Clear the canvas
+        
+        
+        
+        
+        
+        
+          });   
+       });

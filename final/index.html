@@ -22,14 +22,24 @@
         <main>
             <!-- Sand Raking Area -->
             <section id="sand-garden">
-                <h2>Rake the Sand</h2>
-                <canvas id="sandCanvas"></canvas>
+                <h2 class="hidden">Zen Garden</h2>
+                <div id="interactive-sand-container">
+                    <!-- Sand Area -->
+                    <canvas id="sandCanvas" width="800" height="400"></canvas>
+                    
+                    <!-- Decorative Plants/Structures -->
+                    <img src="plant1.png" alt="Plant" class="zen-decor left-decor">
+                    <img src="stone-lantern.png" alt="Lantern" class="zen-decor right-decor">
+                </div>
+            
+                <!-- Rake Tools -->
                 <div id="rake-tools">
                     <button class="rake-btn" data-tool="small">Small Rake</button>
                     <button class="rake-btn" data-tool="large">Large Rake</button>
                     <button class="rake-btn" data-tool="erase">Erase Patterns</button>
                 </div>
             </section>
+            
     
             <!-- Daily Affirmation -->
             <section id="daily-affirmation">
@@ -41,7 +51,7 @@
             <section id="toolbox">
                 <h2>Toolbox</h2>
                 <div id="breathing-bubble"></div> 
-                
+
                 <div class="tool" id="breathing-tool">
                     <h3>Breathing Bubble</h3>
                     <div class="bubble"></div>
