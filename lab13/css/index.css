@@ -12,6 +12,47 @@ body {
   color: #333;
 }
 
+/* Style the input box */
+#numberInput {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #89e18d;
+}
+
+/* Style the output bubbles */
+#output p {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.fizz {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.buzz {
+  background-color: #ffd93b;
+  color: black;
+}
+
+.boom {
+  background-color: #6bc1ff;
+  color: white;
+}
+ 
 /* Keyframe Animation for Gradient Background */
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
