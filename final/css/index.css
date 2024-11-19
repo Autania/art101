@@ -1,134 +1,176 @@
-/* General Reset */
-/* General Reset */
-body, h1, h2, p, button, textarea {
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Style */
-body {
-  background: linear-gradient(to bottom, #d2edf4, #e5c8aa, #dfeedf);
-  font-family: 'Poppins', sans-serif;
-  color: #3e3d3d;
+  background: linear-gradient(to bottom, #f0e7da, #cde2cb);
+  color: #4a4a4a;
   text-align: center;
 }
 
-
 /* Header */
 header {
-  margin-bottom: 20px;
+  background: #d6ccc2;
+  padding: 20px 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
+header h1 {
+  margin: 0;
   font-size: 2.5rem;
-  color: #5f4b3b;
+  color: #4b6043;
 }
 
-p {
+header p {
+  margin: 5px 0;
   font-size: 1rem;
+  color: #6c6c6c;
 }
 
-/* Sand Garden */
-#sand-garden {
-  margin: 20px auto;
-  width: 80%;
-  height: 400px;
-  border: 3px solid #8c7a6b;
-  background: #f4e3d2;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Main Layout */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Zen Garden Section */
+#zen-garden-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  gap: 20px;
   position: relative;
-  padding: 10px;
 }
-canvas {
- background: no-repeat url("/final/img/sand.jpg");
-  background-size: cover;
+
+/* Decorative Left and Right Sections */
+#decorative-left, #decorative-right {
+  width: 100px;
+  height: 450px;
+  background: #a5c7a4;
+  border-radius: 20px;
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#decorative-left {
+  position: relative;
+}
+
+#decorative-right {
+  position: relative;
+}
+
+/* Interactive Sand Container */
+#interactive-sand-container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background: #e6d7c3;
+  border-radius: 40px; /* Rounded edges for the sand pit */
+  box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 canvas {
+  display: block;
+  margin: 0 auto;
   width: 100%;
-  height: 300px;
-  background: #d8c3a5;
-  border-radius: 8px;
+  height: 100%;
+  background: radial-gradient(circle, #f8f2e6, #e6d7c3);
+  border-radius: inherit; /* Matches container's rounded edges */
 }
 
+/* Rake Tools */
 #rake-tools {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.rake-btn {
+button.rake-btn {
   background: #a58f78;
   color: white;
   border: none;
-  border-radius: 5px;
   padding: 10px 20px;
-  cursor: pointer;
   margin: 5px;
-  transition: background-color 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.rake-btn:hover {
-  background: #c2a97d;
+button.rake-btn:hover {
+  background: #c8b191;
 }
 
-/* Affirmations */
-#daily-affirmation {
-  margin: 20px auto;
-  padding: 10px;
-  background: white;
-  border: 1px solid #8c7a6b;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Affirmation Section */
+#affirmation-section {
+  margin: 30px 0;
 }
 
-/* Toolbox */
-#toolbox {
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  border: 1px solid #8c7a6b;
-  border-radius: 8px;
+#affirmation-section h2 {
+  font-size: 1.5rem;
+  color: #4b6043;
 }
+
+#affirmation-section p {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+/* Toolbox Section */
+#toolbox-section {
+  margin: 40px 0;
+}
+
+#toolbox-section h2 {
+  font-size: 1.5rem;
+  color: #4b6043;
+  margin-bottom: 10px;
+}
+
 
 #breathing-bubble {
-  width: 100px;
-  height: 100px;
-  background: radial-gradient(circle, #7b9df4, #a2cea0);
-  border-radius: 50%;
-  margin: 0 auto;
-  animation: breathe 6s infinite ease-in-out; /* Adjust speed here */
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background: radial-gradient(circle, #88c9b0, #4a746d);
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    animation: breathing 6s infinite ease-in-out; /* Smooth breathing animation */
+}
+/* Keyframes for breathing animation */
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(1); /* Normal size */
+    }
+    50% {
+        transform: scale(1.3); /* Slightly expanded size */
+    }
 }
 
-@keyframes breathe {
-  0%, 100% {
-      transform: scale(1);
-  }
-  50% {
-      transform: scale(1.5); /* Adjust the scale for size */
-  }
+
+
+#sound-therapy {
+  margin: 20px 0;
 }
 
-.tool {
-  margin: 10px 0;
+button.sound-btn {
+  background: #4b6043;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-textarea {
-  width: 90%;
-  height: 100px;
-  padding: 10px;
-  border: 1px solid #d6ccc2;
-  border-radius: 5px;
-  font-family: 'Poppins', sans-serif;
-}
-
-textarea:focus {
-  outline: none;
-  border-color: #a58f78;
+button.sound-btn:hover {
+  background: #88c9b0;
 }
 
 /* Footer */
 footer {
-  margin-top: 20px;
-  font-size: 0.8rem;
-  color: #8c7a6b;
+  margin: 40px 0;
+  font-size: 1rem;
+  color: #4a4a4a;
 }

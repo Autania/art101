@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Change affirmations daily
   affirmationText.textContent = affirmations[Math.floor(Math.random() * affirmations.length)];
-
-}); // <--- Missing this
+});
 
 // Sand Raking Logic
 const canvas = document.getElementById('sandCanvas');
@@ -26,34 +25,48 @@ let rakeSize = 5; // Default small rake size
 ctx.lineWidth = rakeSize;
 ctx.lineCap = 'round'; // Makes grooves smooth
 
+// Function to draw rake lines
+function drawRakeLines(x, y) {
+  for (let i = -2; i <= 2; i++) { // Create 5 lines (-2, -1, 0, 1, 2)
+      ctx.beginPath();
+      ctx.moveTo(x, y + i * rakeSize * 2); // Space lines based on rakeSize
+      ctx.lineTo(x + 1, y + i * rakeSize * 2); // Slight horizontal movement
+      ctx.strokeStyle = '#c8b191'; // Sand groove color
+      ctx.stroke();
+  }
+}
 
+// Mouse events for raking
 canvas.addEventListener('mousedown', (e) => {
-    isDrawing = true;
-    ctx.beginPath();
-    ctx.moveTo(e.offsetX, e.offsetY);
+  isDrawing = true;
+  const rect = canvas.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  drawRakeLines(x, y); // Start raking immediately
 });
 
 canvas.addEventListener('mousemove', (e) => {
-    if (isDrawing) {
-        ctx.lineTo(e.offsetX, e.offsetY);
-        ctx.strokeStyle = '#c8b191'; // Sand groove color
-        ctx.stroke();
-    }
+  if (isDrawing) {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      drawRakeLines(x, y);
+  }
 });
 
 canvas.addEventListener('mouseup', () => (isDrawing = false));
+canvas.addEventListener('mouseleave', () => (isDrawing = false));
 
 // Button Event Listeners to Change Rake Size
-
 document.querySelectorAll('.rake-btn').forEach((button) => {
-    button.addEventListener('click', (e) => {
-        const tool= e.target.dataset.tool;
-        if(tool === 'small') rakeSize=5;if(tool === 'large') rakeSize=15;if(tool=== 'erase'){ctx.clearRect(0,0,canvas.width,canvas.height);}// Clear the canvas
-        
-        
-        
-        
-        
-        
-          });   
-       });
+  button.addEventListener('click', (e) => {
+      const tool = e.target.dataset.tool;
+      if (tool === 'small') {
+          rakeSize = 5; // Small rake
+      } else if (tool === 'large') {
+          rakeSize = 15; // Large rake
+      } else if (tool === 'erase') {
+          ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+      }
+  });
+});
