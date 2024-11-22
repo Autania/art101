@@ -1,42 +1,22 @@
-// Author: Autania Mierow
-// Date: 4 November 2024
+/* 
+    lab.js - This simple JavaScript/jQuery script uses buttons to modify some elements on the page.
+    Requirements: jQuery must be loaded for this script to work.
+    Author: Autania 
+    Date: NOV 21
+*/
 
-// add button to challenge section
-
+// Append buttons to each section
 $("#challenge").append("<button id='button-challenge'>Make Special</button>");
-
-// add a listener to the challenge button
-
-$("#button-challenge").click(function(){
-    $("#challenge").toggleClass("special");
-});
-
-// add button to problems section
-
 $("#problems").append("<button id='button-problems'>Make Special</button>");
-
-// add a listener to the problems button
-
-$("#button-problems").click(function(){
-    $("#problems").toggleClass("special");
-});
-
-// add button to reflection section
-
-$("#reflection").append("<button id='button-reflection'>Make Special</button>");
-
-// add a listener to the reflection button
-
-$("#button-reflection").click(function(){
-    $("#reflection").toggleClass("special");
-});
-
-// add button to the results section
-
 $("#results").append("<button id='button-results'>Make Special</button>");
 
-// add a listener to the results button
-
-$("#button-results").click(function(){
+// Add click listeners to toggle the "special" class
+$("#button-challenge").click(function() {
+    $("#challenge").toggleClass("special");
+});
+$("#button-problems").click(function() {
+    $("#problems").toggleClass("special");
+});
+$("#button-results").click(function() {
     $("#results").toggleClass("special");
 });
