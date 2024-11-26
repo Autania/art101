@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+  font-family: 'Pokemon', Arial, sans-serif; /* Custom Pokémon font */
+  background: linear-gradient(to bottom, #f7c948, #f44236); /* Pokémon color theme */
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  text-shadow: 2px 2px 4px #333;
+  margin-top: 20px;
+}
+
+#challenge, #results {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px solid #ffcc00; /* Pikachu-yellow border */
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+select, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #333;
+  font-family: 'Pokemon', Arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #ffffff;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f7f7f7;
+  border: 3px solid #ffcc00;
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#output ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#output li {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff4422; /* Fire-red color for Pokémon names */
+}
+
+#output a {
+  text-decoration: none;
+  color: #007bff; /* Water-blue color for links */
+}
+
+#output a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+/* Add Pokémon-Themed Background for Button */
+button {
+  background: linear-gradient(to bottom, #ffcc00, #f7a948); /* Pikachu theme */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #f7a948, #ff4422); /* Pokémon red-yellow gradient */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #challenge, #results {
+      width: 90%;
+  }
+}
